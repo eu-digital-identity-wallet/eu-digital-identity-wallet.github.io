@@ -1,1 +1,1 @@
-# eu-digital-identity-wallet.github.i
+# eu-digital-identity-wallet.github.io
