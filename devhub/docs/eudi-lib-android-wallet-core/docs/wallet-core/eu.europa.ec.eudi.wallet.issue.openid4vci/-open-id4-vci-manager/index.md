@@ -1,0 +1,18 @@
+# Index of eudi-lib-android-wallet-core/docs/wallet-core/eu.europa.ec.eudi.wallet.issue.openid4vci/-open-id4-vci-manager
+
+- [-builder](/eudi-lib-android-wallet-core/docs/wallet-core/eu.europa.ec.eudi.wallet.issue.openid4vci/-open-id4-vci-manager/-builder/)
+- [-companion](/eudi-lib-android-wallet-core/docs/wallet-core/eu.europa.ec.eudi.wallet.issue.openid4vci/-open-id4-vci-manager/-companion/)
+- [-config](/eudi-lib-android-wallet-core/docs/wallet-core/eu.europa.ec.eudi.wallet.issue.openid4vci/-open-id4-vci-manager/-config/)
+- [-on-deferred-issue-result](/eudi-lib-android-wallet-core/docs/wallet-core/eu.europa.ec.eudi.wallet.issue.openid4vci/-open-id4-vci-manager/-on-deferred-issue-result/)
+- [-on-issue-event](/eudi-lib-android-wallet-core/docs/wallet-core/eu.europa.ec.eudi.wallet.issue.openid4vci/-open-id4-vci-manager/-on-issue-event/)
+- [-on-resolved-offer](/eudi-lib-android-wallet-core/docs/wallet-core/eu.europa.ec.eudi.wallet.issue.openid4vci/-open-id4-vci-manager/-on-resolved-offer/)
+- [-on-result](/eudi-lib-android-wallet-core/docs/wallet-core/eu.europa.ec.eudi.wallet.issue.openid4vci/-open-id4-vci-manager/-on-result/)
+- [get-issuer-metadata](/eudi-lib-android-wallet-core/docs/wallet-core/eu.europa.ec.eudi.wallet.issue.openid4vci/-open-id4-vci-manager/get-issuer-metadata/)
+- [issue-deferred-document](/eudi-lib-android-wallet-core/docs/wallet-core/eu.europa.ec.eudi.wallet.issue.openid4vci/-open-id4-vci-manager/issue-deferred-document/)
+- [issue-document-by-configuration-identifier](/eudi-lib-android-wallet-core/docs/wallet-core/eu.europa.ec.eudi.wallet.issue.openid4vci/-open-id4-vci-manager/issue-document-by-configuration-identifier/)
+- [issue-document-by-doc-type](/eudi-lib-android-wallet-core/docs/wallet-core/eu.europa.ec.eudi.wallet.issue.openid4vci/-open-id4-vci-manager/issue-document-by-doc-type/)
+- [issue-document-by-format](/eudi-lib-android-wallet-core/docs/wallet-core/eu.europa.ec.eudi.wallet.issue.openid4vci/-open-id4-vci-manager/issue-document-by-format/)
+- [issue-document-by-offer-uri](/eudi-lib-android-wallet-core/docs/wallet-core/eu.europa.ec.eudi.wallet.issue.openid4vci/-open-id4-vci-manager/issue-document-by-offer-uri/)
+- [issue-document-by-offer](/eudi-lib-android-wallet-core/docs/wallet-core/eu.europa.ec.eudi.wallet.issue.openid4vci/-open-id4-vci-manager/issue-document-by-offer/)
+- [resolve-document-offer](/eudi-lib-android-wallet-core/docs/wallet-core/eu.europa.ec.eudi.wallet.issue.openid4vci/-open-id4-vci-manager/resolve-document-offer/)
+- [resume-with-authorization](/eudi-lib-android-wallet-core/docs/wallet-core/eu.europa.ec.eudi.wallet.issue.openid4vci/-open-id4-vci-manager/resume-with-authorization/)
