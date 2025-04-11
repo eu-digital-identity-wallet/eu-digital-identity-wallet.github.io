@@ -1,0 +1,4 @@
+# Index of eudi-lib-android-wallet-core/docs/wallet-core/eu.europa.ec.eudi.wallet.presentation/-session-termination-flag/-companion
+
+- [-s-e-n-d_-s-e-s-s-i-o-n_-t-e-r-m-i-n-a-t-i-o-n_-m-e-s-s-a-g-e](/eudi-lib-android-wallet-core/docs/wallet-core/eu.europa.ec.eudi.wallet.presentation/-session-termination-flag/-companion/-s-e-n-d_-s-e-s-s-i-o-n_-t-e-r-m-i-n-a-t-i-o-n_-m-e-s-s-a-g-e/)
+- [-u-s-e_-t-r-a-n-s-p-o-r-t_-s-p-e-c-i-f-i-c_-s-e-s-s-i-o-n_-t-e-r-m-i-n-a-t-i-o-n](/eudi-lib-android-wallet-core/docs/wallet-core/eu.europa.ec.eudi.wallet.presentation/-session-termination-flag/-companion/-u-s-e_-t-r-a-n-s-p-o-r-t_-s-p-e-c-i-f-i-c_-s-e-s-s-i-o-n_-t-e-r-m-i-n-a-t-i-o-n/)

@@ -1,0 +1,15 @@
+# Index of eudi-lib-android-wallet-core/docs/wallet-core/eu.europa.ec.eudi.wallet.transfer.openid4vp/-open-id4-vp-manager
+
+- [-companion](/eudi-lib-android-wallet-core/docs/wallet-core/eu.europa.ec.eudi.wallet.transfer.openid4vp/-open-id4-vp-manager/-companion/)
+- [-open-id4-vp-manager](/eudi-lib-android-wallet-core/docs/wallet-core/eu.europa.ec.eudi.wallet.transfer.openid4vp/-open-id4-vp-manager/-open-id4-vp-manager/)
+- [add-transfer-event-listener](/eudi-lib-android-wallet-core/docs/wallet-core/eu.europa.ec.eudi.wallet.transfer.openid4vp/-open-id4-vp-manager/add-transfer-event-listener/)
+- [config](/eudi-lib-android-wallet-core/docs/wallet-core/eu.europa.ec.eudi.wallet.transfer.openid4vp/-open-id4-vp-manager/config/)
+- [ktor-http-client-factory](/eudi-lib-android-wallet-core/docs/wallet-core/eu.europa.ec.eudi.wallet.transfer.openid4vp/-open-id4-vp-manager/ktor-http-client-factory/)
+- [listeners-executor](/eudi-lib-android-wallet-core/docs/wallet-core/eu.europa.ec.eudi.wallet.transfer.openid4vp/-open-id4-vp-manager/listeners-executor/)
+- [logger](/eudi-lib-android-wallet-core/docs/wallet-core/eu.europa.ec.eudi.wallet.transfer.openid4vp/-open-id4-vp-manager/logger/)
+- [reader-trust-store](/eudi-lib-android-wallet-core/docs/wallet-core/eu.europa.ec.eudi.wallet.transfer.openid4vp/-open-id4-vp-manager/reader-trust-store/)
+- [remove-all-transfer-event-listeners](/eudi-lib-android-wallet-core/docs/wallet-core/eu.europa.ec.eudi.wallet.transfer.openid4vp/-open-id4-vp-manager/remove-all-transfer-event-listeners/)
+- [remove-transfer-event-listener](/eudi-lib-android-wallet-core/docs/wallet-core/eu.europa.ec.eudi.wallet.transfer.openid4vp/-open-id4-vp-manager/remove-transfer-event-listener/)
+- [request-processor](/eudi-lib-android-wallet-core/docs/wallet-core/eu.europa.ec.eudi.wallet.transfer.openid4vp/-open-id4-vp-manager/request-processor/)
+- [resolve-request-uri](/eudi-lib-android-wallet-core/docs/wallet-core/eu.europa.ec.eudi.wallet.transfer.openid4vp/-open-id4-vp-manager/resolve-request-uri/)
+- [send-response](/eudi-lib-android-wallet-core/docs/wallet-core/eu.europa.ec.eudi.wallet.transfer.openid4vp/-open-id4-vp-manager/send-response/)

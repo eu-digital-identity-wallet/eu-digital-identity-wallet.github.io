@@ -1,0 +1,15 @@
+# Index of eudi-doc-architecture-and-reference-framework/docs/discussion-topics
+
+- [README](/eudi-doc-architecture-and-reference-framework/docs/discussion-topics/README/)
+- [a-privacy-risks-and-mitigations](/eudi-doc-architecture-and-reference-framework/docs/discussion-topics/a-privacy-risks-and-mitigations/)
+- [b-re-issuance-and-batch-issuance-of-pids-and-attestations](/eudi-doc-architecture-and-reference-framework/docs/discussion-topics/b-re-issuance-and-batch-issuance-of-pids-and-attestations/)
+- [c-wallet-unit-attestation](/eudi-doc-architecture-and-reference-framework/docs/discussion-topics/c-wallet-unit-attestation/)
+- [d-embedded-disclosure-policies](/eudi-doc-architecture-and-reference-framework/docs/discussion-topics/d-embedded-disclosure-policies/)
+- [e-pseudonyms-including-user-authentication-mechanism](/eudi-doc-architecture-and-reference-framework/docs/discussion-topics/e-pseudonyms-including-user-authentication-mechanism/)
+- [f-digital-credential-api](/eudi-doc-architecture-and-reference-framework/docs/discussion-topics/f-digital-credential-api/)
+- [g-zero-knowledge-proof](/eudi-doc-architecture-and-reference-framework/docs/discussion-topics/g-zero-knowledge-proof/)
+- [img](/eudi-doc-architecture-and-reference-framework/docs/discussion-topics/img/)
+- [l+m-data-deletion-and-dpa-complaint](/eudi-doc-architecture-and-reference-framework/docs/discussion-topics/l+m-data-deletion-and-dpa-complaint/)
+- [n-export-and-data-portability](/eudi-doc-architecture-and-reference-framework/docs/discussion-topics/n-export-and-data-portability/)
+- [v-pid-rulebook](/eudi-doc-architecture-and-reference-framework/docs/discussion-topics/v-pid-rulebook/)
+- [x-relying-party-registration](/eudi-doc-architecture-and-reference-framework/docs/discussion-topics/x-relying-party-registration/)

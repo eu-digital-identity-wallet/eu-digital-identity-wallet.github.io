@@ -1,0 +1,16 @@
+# Index of eudi-lib-android-wallet-core/docs/wallet-core/eu.europa.ec.eudi.wallet.presentation/-presentation-manager-impl
+
+- [-companion](/eudi-lib-android-wallet-core/docs/wallet-core/eu.europa.ec.eudi.wallet.presentation/-presentation-manager-impl/-companion/)
+- [-presentation-manager-impl](/eudi-lib-android-wallet-core/docs/wallet-core/eu.europa.ec.eudi.wallet.presentation/-presentation-manager-impl/-presentation-manager-impl/)
+- [add-transfer-event-listener](/eudi-lib-android-wallet-core/docs/wallet-core/eu.europa.ec.eudi.wallet.presentation/-presentation-manager-impl/add-transfer-event-listener/)
+- [disable-n-f-c-engagement](/eudi-lib-android-wallet-core/docs/wallet-core/eu.europa.ec.eudi.wallet.presentation/-presentation-manager-impl/disable-n-f-c-engagement/)
+- [enable-n-f-c-engagement](/eudi-lib-android-wallet-core/docs/wallet-core/eu.europa.ec.eudi.wallet.presentation/-presentation-manager-impl/enable-n-f-c-engagement/)
+- [nfc-engagement-service-class](/eudi-lib-android-wallet-core/docs/wallet-core/eu.europa.ec.eudi.wallet.presentation/-presentation-manager-impl/nfc-engagement-service-class/)
+- [reader-trust-store](/eudi-lib-android-wallet-core/docs/wallet-core/eu.europa.ec.eudi.wallet.presentation/-presentation-manager-impl/reader-trust-store/)
+- [remove-all-transfer-event-listeners](/eudi-lib-android-wallet-core/docs/wallet-core/eu.europa.ec.eudi.wallet.presentation/-presentation-manager-impl/remove-all-transfer-event-listeners/)
+- [remove-transfer-event-listener](/eudi-lib-android-wallet-core/docs/wallet-core/eu.europa.ec.eudi.wallet.presentation/-presentation-manager-impl/remove-transfer-event-listener/)
+- [send-response](/eudi-lib-android-wallet-core/docs/wallet-core/eu.europa.ec.eudi.wallet.presentation/-presentation-manager-impl/send-response/)
+- [start-proximity-presentation](/eudi-lib-android-wallet-core/docs/wallet-core/eu.europa.ec.eudi.wallet.presentation/-presentation-manager-impl/start-proximity-presentation/)
+- [start-remote-presentation](/eudi-lib-android-wallet-core/docs/wallet-core/eu.europa.ec.eudi.wallet.presentation/-presentation-manager-impl/start-remote-presentation/)
+- [stop-proximity-presentation](/eudi-lib-android-wallet-core/docs/wallet-core/eu.europa.ec.eudi.wallet.presentation/-presentation-manager-impl/stop-proximity-presentation/)
+- [stop-remote-presentation](/eudi-lib-android-wallet-core/docs/wallet-core/eu.europa.ec.eudi.wallet.presentation/-presentation-manager-impl/stop-remote-presentation/)
