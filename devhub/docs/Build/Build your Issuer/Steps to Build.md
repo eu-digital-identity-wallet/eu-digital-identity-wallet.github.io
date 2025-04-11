@@ -210,7 +210,7 @@ To run the Issuer in Docker, follow these steps:
 
 	   1. First directory named `config_secrets`
 		  
-		  This directory will have the cert.pem and key.pem generated in [Section 4](#4-running-your-local-eudiw-issuer-over-https)
+		  This directory will have the cert.pem and key.pem generated in Section 4 above
 	   
 		  As well as the config_secrets.py based on this [example](https://github.com/eu-digital-identity-wallet/eudi-srv-web-issuing-eudiw-py/blob/main/app/app_config/__config_secrets.py){:target="_blank"}
 
