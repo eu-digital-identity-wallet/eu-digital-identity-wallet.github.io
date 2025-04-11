@@ -2196,7 +2196,7 @@
 <li><code>eidasnode_url</code> (eIDAS Node base URL. Only needs to be changed if you're configuring the eIDAS Node)</li>
 <li><code>eidasnode_lightToken_connectorEndpoint</code> (eIDAS node connector endpoint for lightrequest. Only needs to be changed if you're configuring the eIDAS Node)</li>
 </ul>
-<p>You must copy your IACA trusted certificate(s) (in PEM format) to the <code>trusted_CAs_path</code> folder - you can find an example test IACA certificate for country Utopia (UT) <a href="https://github.com/eu-digital-identity-wallet/eudi-srv-web-issuing-eudiw-py/blob/main/api_docs/test_tokens/IACA-token/PIDIssuerCAUT01.pem.gz">here</a> -.</p>
+<p>You must copy your IACA trusted certificate(s) (in PEM format) to the <code>trusted_CAs_path</code> folder - you can find an example test IACA certificate for country Utopia (UT) <a href="https://github.com/eu-digital-identity-wallet/eudi-srv-web-issuing-eudiw-py/blob/main/api_docs/test_tokens/IACA-token/PIDIssuerCAUT01.pem.gz" target="_blank">here</a>.</p>
 <h2 id="2-configuration-of-countries">2. Configuration of Countries</h2>
 <p>The supported countries configuration of the Issuer is located in <code>/app/app_config/config_countries.py</code>.</p>
 <p>Parameters that should be changed for each country:</p>
@@ -2208,7 +2208,7 @@
 <li><code>pid_mdoc_cert</code> - Document/Credential signer (DS) certificate file location.</li>
 </ul>
 <p>You must copy your DS private key (in PEM format) to <code>pid_mdoc_privkey</code> file (the password must be defined in <code>pid_mdoc_privkey_passwd</code>), and the certificate (in DER format) to <code>pid_mdoc_cert</code> file.</p>
-<p>You can find example test private DS keys and certificates, for country Utopia (UT) <a href="https://github.com/eu-digital-identity-wallet/eudi-srv-web-issuing-eudiw-py/blob/main/api_docs/test_tokens/DS-token">here</a> - the password of the example test private DS keys is b"pid-ds-0002".
+<p>You can find example test private DS keys and certificates, for country Utopia (UT) <a href="https://github.com/eu-digital-identity-wallet/eudi-srv-web-issuing-eudiw-py/blob/main/api_docs/test_tokens/DS-token" target="_blank">here</a> - the password of the example test private DS keys is b"pid-ds-0002".
 To decrypt the private key you can run the following command <code>openssl ec -in PID-DS-0002.pid-ds-0002.key.pem -out PID-DS-0002-decrypted.key.pem</code>.</p>
 <h2 id="3-oid4vci-configuration">3. OID4VCI Configuration</h2>
 <p>For configuring the installed <a href="https://github.com/IdentityPython/idpy-oidc">idpy-oidc</a> and <a href="https://github.com/rohe/openid4v">openid4v</a> libraries, you need to change the following parameters in the <code>app/app_config/oid_config.py</code> configuration file:</p>
