@@ -9,12 +9,12 @@ The Reference Implementation includes the travel use case implementation to show
 3. **Renting a car**: When it comes to renting a car, Jane is redirected to a remote signing portal to conclude the rental process. Using her EUDI Wallet, she digitally signs the car rental contract, finalizing her arrangements with security and ease.
 4. **Hotel check-in**: Upon arrival at her hotel, Jane approaches the check-in counter. She presents her Digital ID and Photo-ID from her EUDI Wallet to the hotel’s proximity reader. The process is quick and secure, allowing her to start relaxing in her room in no time.
 
-[Travel Scenario](https://github.com/eu-digital-identity-wallet/eudi-doc-developers-hub-site/blob/main/docs/assets/EUDI%20Wallet_Travel%20Demo.mp4)
+[Travel Scenario](https://github.com/eu-digital-identity-wallet/eu-digital-identity-wallet.github.io/blob/main/docs/assets/EUDI%20Wallet_Travel%20Demo.mp4)
 
 
 ## Test online or run locally
 
-1. Download the [EUDI Wallet Reference Implementation application](../../../Test/Wallet Application/Introduction/).
+1. Download the [EUDI Wallet Reference Implementation application](../../../Test/Wallet Application/).
 2. Access the [demo booking service](https://dev.booking.demo.eudiw.dev){:target="_blank"}.
 
 ## User Journey
