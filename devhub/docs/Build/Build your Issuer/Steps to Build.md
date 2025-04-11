@@ -191,7 +191,7 @@ If you want to make your local Issuer available on the Internet, we recommend to
 
 1. Follow the [installation guide](https://certbot.eff.org){:target="_blank"}
 
-2. Run `certbot` to get a free HTTPS certificate. The `certbot` will also configure the Issuer Nginx configuration file with the HTTPS certificate.
+2. Run `certbot` to get a free HTTPS certificate. The `certbot` will also configure the Issuer Nginx configuration file with the HTTPS certificate
 
 3. Restart the Nginx server and goto `https:\\FQDN\` (FQDN configured in the Nginx configuration file)
 

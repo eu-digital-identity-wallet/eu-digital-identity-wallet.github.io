@@ -11,7 +11,7 @@ Parameters that should be changed:
 - `service_url` (Base url of the service)
 - `trusted_CAs_path` (Path to a folder with trusted IACA certificates)
 - `eidasnode_url` (eIDAS Node base URL. Only needs to be changed if you're configuring the eIDAS Node)
-- `eidasnode_lightToken_connectorEndpoint` (eIDAS node connector endpoint for lightrequest. Only needs to be changed if you're configuring the eIDAS Node.)
+- `eidasnode_lightToken_connectorEndpoint` (eIDAS node connector endpoint for lightrequest. Only needs to be changed if you're configuring the eIDAS Node)
 
 You must copy your IACA trusted certificate(s) (in PEM format) to the `trusted_CAs_path` folder - you can find an example test IACA certificate for country Utopia (UT) [here](https://github.com/eu-digital-identity-wallet/eudi-srv-web-issuing-eudiw-py/blob/main/api_docs/test_tokens/IACA-token/PIDIssuerCAUT01.pem.gz) -.
 
