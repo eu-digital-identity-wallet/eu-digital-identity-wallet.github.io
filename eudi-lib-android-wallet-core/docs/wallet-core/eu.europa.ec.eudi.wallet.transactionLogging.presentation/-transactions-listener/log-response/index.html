@@ -2078,8 +2078,9 @@
 //<a href="../../../../">wallet-core</a>/<a href="../../">eu.europa.ec.eudi.wallet.transactionLogging.presentation</a>/<a href="../">TransactionsListener</a>/<a href="./">logResponse</a></p>
 <h1 id="logresponse">logResponse</h1>
 <p>[androidJvm]
-fun <a href="./">logResponse</a>(response: Response, e: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-throwable/index.html">Throwable</a>? = null)</p>
-<p>Logs the response after sending it to the relying party This method is called from <a href="../../-transactions-decorator/send-response/">TransactionsDecorator.sendResponse</a></p>
+fun <a href="./">logResponse</a>(response: Response, error: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-throwable/index.html">Throwable</a>? = null)</p>
+<p>Logs the response after sending it to the relying party.</p>
+<p>This method updates the current transaction log with the response details and any error that might have occurred during the sending process. If an error occurs during logging itself, it logs that error and marks the transaction log with an error status.</p>
 <h4 id="parameters">Parameters</h4>
 <p>androidJvm</p>
 <table>
@@ -2092,11 +2093,11 @@ fun <a href="./">logResponse</a>(response: Response, e: <a href="https://kotlinl
 <tbody>
 <tr>
 <td>response</td>
-<td>the response to be logged</td>
+<td>The response to be logged.</td>
 </tr>
 <tr>
-<td>e</td>
-<td>the exception that occurred during sending the response, if any</td>
+<td>error</td>
+<td>The exception that occurred during sending the response, if any.</td>
 </tr>
 </tbody>
 </table>

@@ -2040,6 +2040,23 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parameters
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2062,6 +2079,30 @@
 <h1 id="transactionsdecorator">TransactionsDecorator</h1>
 <p>[androidJvm]
 constructor(delegate: <a href="../../../eu.europa.ec.eudi.wallet.presentation/-presentation-manager/">PresentationManager</a>, documentManager: DocumentManager, transactionLogger: <a href="../../../eu.europa.ec.eudi.wallet.transactionLogging/-transaction-logger/">TransactionLogger</a>, logger: <a href="../../../eu.europa.ec.eudi.wallet.logging/-logger/">Logger</a>? = null)</p>
+<h4 id="parameters">Parameters</h4>
+<p>androidJvm</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>documentManager</td>
+<td>The manager for accessing document details, passed to the <a href="../../-transactions-listener/">TransactionsListener</a>.</td>
+</tr>
+<tr>
+<td>transactionLogger</td>
+<td>The logger for persisting transaction logs, passed to the <a href="../../-transactions-listener/">TransactionsListener</a>.</td>
+</tr>
+<tr>
+<td>logger</td>
+<td>Optional logger for internal logging of the decorator and listener.</td>
+</tr>
+</tbody>
+</table>
 
 
 

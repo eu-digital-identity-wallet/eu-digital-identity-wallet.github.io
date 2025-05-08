@@ -2162,7 +2162,7 @@
 <span class="w">  </span><span class="kd">var</span><span class="w"> </span><span class="nv">vciConfig</span><span class="p">:</span><span class="w"> </span><span class="n">VciConfig</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="kr">get</span><span class="w"> </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
-Based on the Build Variant of the Wallet (e.g. Dev)</p>
+Based on the Build Variant of the Wallet (e.g., Dev)</p>
 <div class="highlight"><pre><span></span><code><span class="kd">struct</span><span class="w"> </span><span class="nc">WalletKitConfigImpl</span><span class="p">:</span><span class="w"> </span><span class="n">WalletKitConfig</span><span class="w"> </span><span class="p">{</span>
 
 <span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nv">configLogic</span><span class="p">:</span><span class="w"> </span><span class="n">ConfigLogic</span>
@@ -2248,7 +2248,7 @@ Based on the Build Variant of the Wallet (e.g. Dev)</p>
 <span class="w">  </span><span class="kd">var</span><span class="w"> </span><span class="nv">theme</span><span class="p">:</span><span class="w"> </span><span class="n">ThemeProtocol</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>Based on the Build Variant and Type of the Wallet (e.g. Dev Debug)</p>
+<p>Based on the Build Variant and Type of the Wallet (e.g., Dev Debug)</p>
 <div class="highlight"><pre><span></span><code><span class="kr">final</span><span class="w"> </span><span class="kd">class</span><span class="w"> </span><span class="nc">RQESConfig</span><span class="p">:</span><span class="w"> </span><span class="n">EudiRQESUiConfig</span><span class="w"> </span><span class="p">{</span>
 
 <span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nv">buildVariant</span><span class="p">:</span><span class="w"> </span><span class="n">AppBuildVariant</span>
@@ -2305,8 +2305,8 @@ Based on the Build Variant of the Wallet (e.g. Dev)</p>
 <span class="p">}</span>
 </code></pre></div>
 <h2 id="deeplink-schemas-configuration">DeepLink Schemas configuration</h2>
-<p>According to the specifications issuance and presentation require deep-linking for the same device flows.</p>
-<p>If you want to change or add your own you can do it by adjusting the <em>Wallet.plist</em> file.</p>
+<p>According to the specifications, issuance, presentation, and RQES require deep-linking for the same device flows.</p>
+<p>If you want to change or add your own, you can do it by adjusting the <em>Wallet.plist</em> file.</p>
 <div class="highlight"><pre><span></span><code><span class="nt">&lt;array&gt;</span>
 <span class="w">    </span><span class="nt">&lt;dict&gt;</span>
 <span class="w">        </span><span class="nt">&lt;key&gt;</span>CFBundleTypeRole<span class="nt">&lt;/key&gt;</span>
@@ -2319,11 +2319,12 @@ Based on the Build Variant of the Wallet (e.g. Dev)</p>
 <span class="w">            </span><span class="nt">&lt;string&gt;</span>mdoc-openid4vp<span class="nt">&lt;/string&gt;</span>
 <span class="w">            </span><span class="nt">&lt;string&gt;</span>openid4vp<span class="nt">&lt;/string&gt;</span>
 <span class="w">            </span><span class="nt">&lt;string&gt;</span>openid-credential-offer<span class="nt">&lt;/string&gt;</span>
+<span class="w">            </span><span class="nt">&lt;string&gt;</span>rqes<span class="nt">&lt;/string&gt;</span>
 <span class="w">        </span><span class="nt">&lt;/array&gt;</span>
 <span class="w">    </span><span class="nt">&lt;/dict&gt;</span>
 <span class="nt">&lt;/array&gt;</span>
 </code></pre></div>
-<p>Let's assume you want to add a new one for the credential offer (e.g. custom-my-offer://) the <em>Wallet.plist</em> should look like this:</p>
+<p>Let's assume you want to add a new one for the credential offer (e.g., custom-my-offer://), the <em>Wallet.plist</em> should look like this:</p>
 <div class="highlight"><pre><span></span><code><span class="nt">&lt;array&gt;</span>
 <span class="w">    </span><span class="nt">&lt;dict&gt;</span>
 <span class="w">        </span><span class="nt">&lt;key&gt;</span>CFBundleTypeRole<span class="nt">&lt;/key&gt;</span>
@@ -2336,6 +2337,7 @@ Based on the Build Variant of the Wallet (e.g. Dev)</p>
 <span class="w">            </span><span class="nt">&lt;string&gt;</span>mdoc-openid4vp<span class="nt">&lt;/string&gt;</span>
 <span class="w">            </span><span class="nt">&lt;string&gt;</span>openid4vp<span class="nt">&lt;/string&gt;</span>
 <span class="w">            </span><span class="nt">&lt;string&gt;</span>openid-credential-offer<span class="nt">&lt;/string&gt;</span>
+<span class="w">            </span><span class="nt">&lt;string&gt;</span>rqes<span class="nt">&lt;/string&gt;</span>
 <span class="w">            </span><span class="nt">&lt;string&gt;</span>custom-my-offer<span class="nt">&lt;/string&gt;</span>
 <span class="w">        </span><span class="nt">&lt;/array&gt;</span>
 <span class="w">    </span><span class="nt">&lt;/dict&gt;</span>
@@ -2348,6 +2350,7 @@ Based on the Build Variant of the Wallet (e.g. Dev)</p>
 
 <span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="n">openid4vp</span>
 <span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="n">credential_offer</span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="n">rqes</span>
 <span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="n">external</span>
 
 <span class="w">    </span><span class="kd">static</span><span class="w"> </span><span class="kd">func</span><span class="w"> </span><span class="nf">parseType</span><span class="p">(</span>
@@ -2359,6 +2362,8 @@ Based on the Build Variant of the Wallet (e.g. Dev)</p>
 <span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="p">.</span><span class="n">openid4vp</span>
 <span class="w">      </span><span class="k">case</span><span class="w"> </span><span class="kc">_</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">credential_offer</span><span class="p">.</span><span class="n">getSchemas</span><span class="p">(</span><span class="n">with</span><span class="p">:</span><span class="w"> </span><span class="n">urlSchemaController</span><span class="p">).</span><span class="bp">contains</span><span class="p">(</span><span class="n">scheme</span><span class="p">):</span>
 <span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="p">.</span><span class="n">credential_offer</span>
+<span class="w">      </span><span class="k">case</span><span class="w"> </span><span class="kc">_</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">rqes</span><span class="p">.</span><span class="n">getSchemas</span><span class="p">(</span><span class="n">with</span><span class="p">:</span><span class="w"> </span><span class="n">urlSchemaController</span><span class="p">).</span><span class="bp">contains</span><span class="p">(</span><span class="n">scheme</span><span class="p">):</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="p">.</span><span class="n">rqes</span>
 <span class="w">      </span><span class="k">default</span><span class="p">:</span>
 <span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="p">.</span><span class="n">external</span>
 <span class="w">      </span><span class="p">}</span>
@@ -2372,6 +2377,7 @@ Based on the Build Variant of the Wallet (e.g. Dev)</p>
 
 <span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="n">openid4vp</span>
 <span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="n">credential_offer</span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="n">rqes</span>
 <span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="n">custom_my_offer</span>
 <span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="n">external</span>
 
@@ -2386,6 +2392,8 @@ Based on the Build Variant of the Wallet (e.g. Dev)</p>
 <span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="p">.</span><span class="n">credential_offer</span>
 <span class="w">      </span><span class="k">case</span><span class="w"> </span><span class="kc">_</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">custom_my_offer</span><span class="p">.</span><span class="n">getSchemas</span><span class="p">(</span><span class="n">with</span><span class="p">:</span><span class="w"> </span><span class="n">urlSchemaController</span><span class="p">).</span><span class="bp">contains</span><span class="p">(</span><span class="n">scheme</span><span class="p">):</span>
 <span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="p">.</span><span class="n">credential_offer</span>
+<span class="w">      </span><span class="k">case</span><span class="w"> </span><span class="kc">_</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">rqes</span><span class="p">.</span><span class="n">getSchemas</span><span class="p">(</span><span class="n">with</span><span class="p">:</span><span class="w"> </span><span class="n">urlSchemaController</span><span class="p">).</span><span class="bp">contains</span><span class="p">(</span><span class="n">scheme</span><span class="p">):</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="p">.</span><span class="n">rqes</span>
 <span class="w">      </span><span class="k">default</span><span class="p">:</span>
 <span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="p">.</span><span class="n">external</span>
 <span class="w">      </span><span class="p">}</span>
@@ -2429,7 +2437,7 @@ If you want to add or adjust the displayed scoped documents, you must modify the
 <span class="w">  </span><span class="p">)</span>
 <span class="p">}()</span>
 </code></pre></div>
-<p>Once the above is in place add the following:</p>
+<p>Once the above is in place, add the following:</p>
 <div class="highlight"><pre><span></span><code><span class="n">wallet</span><span class="p">.</span><span class="n">urlSession</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">walletSession</span>
 </code></pre></div>
 <p>in the initializer. This change will allow the app to interact with web services that rely on self-signed certificates.</p>
@@ -2491,7 +2499,7 @@ If you want to add or adjust the displayed scoped documents, you must modify the
 <h2 id="analytics-configuration">Analytics configuration</h2>
 <p>The application allows the configuration of multiple analytics providers. You can configure the following:</p>
 <ol>
-<li>Initializing the provider (e.g. Firebase, Appcenter, etc...)</li>
+<li>Initializing the provider (e.g., Firebase, Appcenter, etc)</li>
 <li>Screen logging</li>
 <li>Event logging</li>
 </ol>

@@ -2088,8 +2088,8 @@
 <h1 id="sendresponse">sendResponse</h1>
 <p>[androidJvm]
 open override fun <a href="./">sendResponse</a>(response: Response)</p>
-<p>Sends a response and logs it.</p>
-<p>This method is responsible for sending the response through the <a href="../../../eu.europa.ec.eudi.wallet.presentation/-presentation-manager/">PresentationManager</a> and logging the response.</p>
+<p>Sends a response using the delegate <a href="../../../eu.europa.ec.eudi.wallet.presentation/-presentation-manager/">PresentationManager</a> and logs the outcome.</p>
+<p>It attempts to send the response and then logs the response details. If sending the response is successful, it logs the response. If an error occurs while sending, it logs the response along with the error and then re-throws the original exception.</p>
 <h4 id="parameters">Parameters</h4>
 <p>androidJvm</p>
 <table>
@@ -2102,7 +2102,7 @@ open override fun <a href="./">sendResponse</a>(response: Response)</p>
 <tbody>
 <tr>
 <td>response</td>
-<td>the response to be sent</td>
+<td>The response to be sent.</td>
 </tr>
 </tbody>
 </table>
@@ -2117,7 +2117,7 @@ open override fun <a href="./">sendResponse</a>(response: Response)</p>
 <tbody>
 <tr>
 <td><a href="https://developer.android.com/reference/kotlin/java/lang/Exception.html">Exception</a></td>
-<td>if an error occurs while sending the response</td>
+<td>if an error occurs while sending the response via the delegate.</td>
 </tr>
 </tbody>
 </table>

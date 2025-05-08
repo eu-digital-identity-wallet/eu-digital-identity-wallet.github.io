@@ -2079,9 +2079,10 @@
 <h1 id="removealltransfereventlisteners">removeAllTransferEventListeners</h1>
 <p>[androidJvm]
 open override fun <a href="./">removeAllTransferEventListeners</a>(): &lt;Error class: unknown class&gt;</p>
-<p>Removes all transfer event listeners and adds the transaction listener.</p>
+<p>Removes all transfer event listeners from the delegate <a href="../../../eu.europa.ec.eudi.wallet.presentation/-presentation-manager/">PresentationManager</a> and then re-adds the internal transactionListener.</p>
+<p>This ensures that the transactionListener remains active even if other listeners are cleared.</p>
 <h4 id="return">Return</h4>
-<p>this instance of <a href="../">TransactionsDecorator</a></p>
+<p>This instance of <a href="../">TransactionsDecorator</a>.</p>
 
 
 

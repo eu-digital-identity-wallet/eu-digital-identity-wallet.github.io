@@ -2174,7 +2174,7 @@
 <span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="nv">config</span><span class="p">:</span><span class="w"> </span><span class="n">EudiWalletConfig</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>Same as the Verifier and Issuing APIs you can configure the Trusted certificates for the <em>EudiWalletConfig</em> per flavor inside the core-logic module at src/demo/config/WalletCoreConfigImpl and src/dev/config/WalletCoreConfigImpl</p>
+<p>Same as the Verifier and Issuing APIs, you can configure the Trusted certificates for the <em>EudiWalletConfig</em> per flavor inside the core-logic module at src/demo/config/WalletCoreConfigImpl and src/dev/config/WalletCoreConfigImpl</p>
 <div class="highlight"><pre><span></span><code><span class="n">_config</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">EudiWalletConfig</span><span class="w"> </span><span class="p">{</span>
 <span class="w">   </span><span class="n">configureReaderTrustStore</span><span class="p">(</span><span class="n">context</span><span class="p">,</span><span class="w"> </span><span class="n">R</span><span class="p">.</span><span class="na">raw</span><span class="p">.</span><span class="na">eudi_pid_issuer_ut</span><span class="p">)</span>
 <span class="p">}</span>
@@ -2215,7 +2215,7 @@
 <span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="nv">rqesConfig</span><span class="p">:</span><span class="w"> </span><span class="n">EudiRQESUiConfig</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>You can configure the <em>RQESConfig</em>, which implements the EudiRQESUiConfig interface from the RQESUi SDK, per flavor. You can find both implementations inside the business-logic module at src/demo/config/RQESConfigImpl and src/dev/config/RQESConfigImpl.</p>
+<p>You can configure the <em>RQESConfig</em>, which implements the EudiRQESUiConfig interface from the RQESUi SDK, per flavor. Both implementations are inside the business-logic module at src/demo/config/RQESConfigImpl and src/dev/config/RQESConfigImpl.</p>
 <div class="highlight"><pre><span></span><code><span class="kd">class</span><span class="w"> </span><span class="nc">RQESConfigImpl</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">EudiRQESUiConfig</span><span class="w"> </span><span class="p">{</span>
 
 <span class="w">    </span><span class="c1">// Optional. Default English translations will be used if not set.</span>
@@ -2230,6 +2230,8 @@
 
 <span class="w">    </span><span class="c1">// Optional. Default is false.</span>
 <span class="w">    </span><span class="kd">override</span><span class="w"> </span><span class="kd">val</span><span class="w"> </span><span class="nv">printLogs</span><span class="p">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="w"> </span><span class="k">get</span><span class="p">()</span>
+
+<span class="w">    </span><span class="kd">override</span><span class="w"> </span><span class="kd">val</span><span class="w"> </span><span class="nv">documentRetrievalConfig</span><span class="p">:</span><span class="w"> </span><span class="n">DocumentRetrievalConfig</span><span class="w"> </span><span class="k">get</span><span class="p">()</span>
 <span class="p">}</span>
 </code></pre></div>
 <p>Example:</p>
@@ -2253,10 +2255,17 @@
 <span class="w">        </span><span class="p">)</span>
 
 <span class="w">    </span><span class="kd">override</span><span class="w"> </span><span class="kd">val</span><span class="w"> </span><span class="nv">printLogs</span><span class="p">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="w"> </span><span class="k">get</span><span class="p">()</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">BuildConfig</span><span class="p">.</span><span class="na">DEBUG</span>
+
+<span class="w">    </span><span class="kd">override</span><span class="w"> </span><span class="kd">val</span><span class="w"> </span><span class="nv">documentRetrievalConfig</span><span class="p">:</span><span class="w"> </span><span class="n">DocumentRetrievalConfig</span>
+<span class="w">        </span><span class="k">get</span><span class="p">()</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">DocumentRetrievalConfig</span><span class="p">.</span><span class="na">X509Certificates</span><span class="p">(</span>
+<span class="w">            </span><span class="n">context</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">context</span><span class="p">,</span>
+<span class="w">            </span><span class="n">certificates</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">listOf</span><span class="p">(</span><span class="n">R</span><span class="p">.</span><span class="na">raw</span><span class="p">.</span><span class="na">my_certificate</span><span class="p">),</span>
+<span class="w">            </span><span class="n">shouldLog</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">should_log_option</span>
+<span class="w">        </span><span class="p">)</span>
 <span class="p">}</span>
 </code></pre></div>
 <h2 id="deeplink-schemas-configuration">DeepLink Schemas configuration</h2>
-<p>According to the specifications issuance and presentation require deep-linking for the same device flows.</p>
+<p>According to the specifications, issuance, presentation, and RQES require deep-linking for the same device flows.</p>
 <p>If you want to adjust any schema, you can alter the <em>AndroidLibraryConventionPlugin</em> inside the build-logic module.</p>
 <div class="highlight"><pre><span></span><code><span class="kd">val</span><span class="w"> </span><span class="nv">eudiOpenId4VpScheme</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;eudi-openid4vp&quot;</span>
 <span class="kd">val</span><span class="w"> </span><span class="nv">eudiOpenid4VpHost</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;*&quot;</span>
@@ -2269,6 +2278,13 @@
 
 <span class="kd">val</span><span class="w"> </span><span class="nv">credentialOfferScheme</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;openid-credential-offer&quot;</span>
 <span class="kd">val</span><span class="w"> </span><span class="nv">credentialOfferHost</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;*&quot;</span>
+
+<span class="kd">val</span><span class="w"> </span><span class="nv">rqesScheme</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;rqes&quot;</span>
+<span class="kd">val</span><span class="w"> </span><span class="nv">rqesHost</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;oauth&quot;</span>
+<span class="kd">val</span><span class="w"> </span><span class="nv">rqesPath</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;/callback&quot;</span>
+
+<span class="kd">val</span><span class="w"> </span><span class="nv">rqesDocRetrievalScheme</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;eudi-rqes&quot;</span>
+<span class="kd">val</span><span class="w"> </span><span class="nv">rqesDocRetrievalHost</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;*&quot;</span>
 </code></pre></div>
 <p>Let's assume you want to change the credential offer schema to custom-my-offer:// the <em>AndroidLibraryConventionPlugin</em> should look like this:</p>
 <div class="highlight"><pre><span></span><code><span class="kd">val</span><span class="w"> </span><span class="nv">eudiOpenId4VpScheme</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;eudi-openid4vp&quot;</span>
@@ -2283,7 +2299,7 @@
 <span class="kd">val</span><span class="w"> </span><span class="nv">credentialOfferScheme</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;custom-my-offer&quot;</span>
 <span class="kd">val</span><span class="w"> </span><span class="nv">credentialOfferHost</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;*&quot;</span>
 </code></pre></div>
-<p>In case of an additive change, e.g. adding an extra credential offer schema, you must adjust the following.</p>
+<p>In case of an additive change, e.g., adding an extra credential offer schema, you must adjust the following.</p>
 <p>AndroidLibraryConventionPlugin:</p>
 <div class="highlight"><pre><span></span><code><span class="kd">val</span><span class="w"> </span><span class="nv">credentialOfferScheme</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;openid-credential-offer&quot;</span>
 <span class="kd">val</span><span class="w"> </span><span class="nv">credentialOfferHost</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;*&quot;</span>
@@ -2345,10 +2361,20 @@
 <span class="w">        </span><span class="n">schemas</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">listOf</span><span class="p">(</span><span class="n">BuildConfig</span><span class="p">.</span><span class="na">ISSUE_AUTHORIZATION_SCHEME</span><span class="p">),</span>
 <span class="w">        </span><span class="n">host</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">BuildConfig</span><span class="p">.</span><span class="na">ISSUE_AUTHORIZATION_HOST</span>
 <span class="w">    </span><span class="p">),</span>
-<span class="w">    </span><span class="n">EXTERNAL</span><span class="p">(</span><span class="n">listOf</span><span class="p">(</span><span class="s">&quot;external&quot;</span><span class="p">))</span>
+<span class="w">    </span><span class="n">DYNAMIC_PRESENTATION</span><span class="p">(</span>
+<span class="w">        </span><span class="n">emptyList</span><span class="p">()</span>
+<span class="w">    </span><span class="p">),</span>
+<span class="w">    </span><span class="n">RQES</span><span class="p">(</span>
+<span class="w">        </span><span class="n">schemas</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">listOf</span><span class="p">(</span><span class="n">BuildConfig</span><span class="p">.</span><span class="na">RQES_SCHEME</span><span class="p">),</span>
+<span class="w">        </span><span class="n">host</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">BuildConfig</span><span class="p">.</span><span class="na">RQES_HOST</span>
+<span class="w">    </span><span class="p">),</span>
+<span class="w">    </span><span class="n">RQES_DOC_RETRIEVAL</span><span class="p">(</span>
+<span class="w">        </span><span class="n">schemas</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">listOf</span><span class="p">(</span><span class="n">BuildConfig</span><span class="p">.</span><span class="na">RQES_DOC_RETRIEVAL_SCHEME</span><span class="p">)</span>
+<span class="w">    </span><span class="p">),</span>
+<span class="w">    </span><span class="n">EXTERNAL</span><span class="p">(</span><span class="n">emptyList</span><span class="p">())</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>In the case of an additive change regarding openId4VP, you also need to update the <em>EudiWalletConfig</em> for each flavor inside the core-logic module.</p>
+<p>In the case of an additive change regarding OpenID4VP, you also need to update the <em>EudiWalletConfig</em> for each flavor inside the core-logic module.</p>
 <div class="highlight"><pre><span></span><code><span class="p">.</span><span class="na">openId4VpConfig</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="n">withScheme</span><span class="p">(</span>
 <span class="w">        </span><span class="n">listOf</span><span class="p">(</span>
@@ -2367,7 +2393,7 @@ If you want to add or adjust the displayed scoped documents, you must modify the
 <p>This section describes configuring the application to interact with services utilizing self-signed certificates.</p>
 <ol>
 <li>Open the build.gradle.kts file of the "core-logic" module.</li>
-<li>In the 'dependencies' block add the following two:
+<li>In the 'dependencies' block, add the following two:
     <div class="highlight"><pre><span></span><code>implementation(libs.ktor.android)
 implementation(libs.ktor.logging)
 </code></pre></div></li>
@@ -2464,7 +2490,7 @@ implementation(libs.ktor.logging)
 <span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="nv">biometryStorageProvider</span><span class="p">:</span><span class="w"> </span><span class="n">BiometryStorageProvider</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>You can provide your storage implementation by implementing the <em>PinStorageProvider</em> interface and then setting it as default to the <em>StorageConfigImpl</em> pinStorageProvider variable.
+<p>You can provide your storage implementation by implementing the <em>PinStorageProvider</em> interface and then setting it as the default to the <em>StorageConfigImpl</em> pinStorageProvider variable.
 The project utilizes Koin for Dependency Injection (DI), thus requiring adjustment of the <em>LogicAuthenticationModule</em> graph to provide the configuration.</p>
 <p>Implementation Example:
 <div class="highlight"><pre><span></span><code><span class="kd">class</span><span class="w"> </span><span class="nc">PrefsPinStorageProvider</span><span class="p">(</span>
@@ -2505,7 +2531,7 @@ The project utilizes Koin for Dependency Injection (DI), thus requiring adjustme
 <h2 id="analytics-configuration">Analytics configuration</h2>
 <p>The application allows the configuration of multiple analytics providers. You can configure the following:</p>
 <ol>
-<li>Initializing the provider (e.g. Firebase, Appcenter, etc...)</li>
+<li>Initializing the provider (e.g., Firebase, Appcenter, etc)</li>
 <li>Screen logging</li>
 <li>Event logging</li>
 </ol>

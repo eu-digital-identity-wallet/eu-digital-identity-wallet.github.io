@@ -2040,6 +2040,23 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parameters
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2062,13 +2079,30 @@
 <h1 id="ontransferevent">onTransferEvent</h1>
 <p>[androidJvm]
 open override fun <a href="./">onTransferEvent</a>(event: TransferEvent)</p>
-<p>Listen for transfer events</p>
-<p>Updates the log based on the event type.</p>
+<p>Handles transfer events to update the transaction log.</p>
+<p>Updates the log based on the event type:</p>
 <ul>
-<li>TransferEvent.Connected - resets the log</li>
-<li>TransferEvent.RequestReceived - updates the log with the request and relying party</li>
-<li>TransferEvent.Error - updates the log with the error status</li>
+<li>TransferEvent.Connected: Resets the log for a new transaction.</li>
+<li>TransferEvent.RequestReceived: Updates the log with request and relying party information.</li>
+<li>TransferEvent.Error: Marks the log with an error status and persists it.</li>
+<li>TransferEvent.Disconnected: Calls <a href="../log-stopped/">logStopped</a> to finalize logging for an incomplete transaction.</li>
 </ul>
+<h4 id="parameters">Parameters</h4>
+<p>androidJvm</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>event</td>
+<td>The transfer event to handle.</td>
+</tr>
+</tbody>
+</table>
 
 
 
