@@ -5,8 +5,8 @@ theme:
   name: material
   font:
     text: Roboto
-  logo: assets/normal-reproduction-low-resolution.jpg
-  favicon: assets/normal-reproduction-low-resolution.jpg
+  logo: assets/logo_eudi_white.svg
+  favicon: assets/favicon.ico
   palette:
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
@@ -123,6 +123,7 @@ plugins:
           import_url: 'https://github.com/eu-digital-identity-wallet/eudi-lib-android-wallet-core?multi_docs=True&branch=main'
           imports:
             - '**/*.md'
+
             - '**/*.png'
         - name: eudi-app-android-wallet-ui
           import_url: 'https://github.com/eu-digital-identity-wallet/eudi-app-android-wallet-ui?multi_docs=True&branch=main'
@@ -161,21 +162,19 @@ nav:
 #      - Demos:
 #           - Introduction: Demos.md
 #           - Travel Scenario: Travel Scenario.md
-  - Resources:
-      - Resources: Resources/index.md
-      - Regulation: Resources/Regulation.md
-      - Architecture and Reference Framework: Resources/Architecture and Reference Implementation.md
-      - Standards: Resources/Standards.md
-      - Large-Scale Pilots: Resources/Large-Scale Pilots.md
-  - Reference Implementation: 
-      - Reference Implementation: Reference Implementation/index.md
-      - Code Contributions: Reference Implementation/Code Contributions.md
-      - Code of Conduct: Reference Implementation/Code of Conduct.md
-      - Licensing: Reference Implementation/Licensing.md
-      - Disclaimer: Reference Implementation/Disclaimer.md
-      - Demos:
-           - Demos: Reference Implementation/Demos/index.md
-           - Travel Scenario: Reference Implementation/Demos/Travel Scenario.md
+#      - Regulation: Resources/Regulation.md
+#      - Architecture and Reference Framework: Resources/Architecture and Reference Implementation.md
+#      - Standards: Resources/Standards.md
+#      - Large-Scale Pilots: Resources/Large-Scale Pilots.md
+#  - Reference Implementation: 
+#      - Reference Implementation: Reference Implementation/index.md
+#      - Code Contributions: Reference Implementation/Code Contributions.md
+#      - Code of Conduct: Reference Implementation/Code of Conduct.md
+#      - Licensing: Reference Implementation/Licensing.md
+#      - Disclaimer: Reference Implementation/Disclaimer.md
+#      - Demos:
+#           - Demos: Reference Implementation/Demos/index.md
+#           - Travel Scenario: Reference Implementation/Demos/Travel Scenario.md
   - Build:
       - Build: Build/index.md
       - Build your Wallet:
@@ -227,3 +226,5 @@ nav:
       - Issuer: Test/Issuer.md
       - Online Verifier: Test/Online Verifier.md
       - Proximity Verifier: Test/Proximity Verifier.md
+  - Resources: 
+      - Resources: Resources/index.md
